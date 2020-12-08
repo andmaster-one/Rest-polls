@@ -46,7 +46,7 @@ class PollDetail(APIView):
 
     def put(self, request, pk, format=None):  
         poll = self.get_object(pk)  
-        serializer = PollSerializer(poll, is_detailed=True, data=request.data, context={'request': request})
+        serializer = PollSerializer(poll, is_detailed=True, data=request.data, context={'request': request, 'is_update':True})
         if serializer.is_valid(raise_exception=True):
             updated_instance = serializer.save()
             return Response(serializer.initial_data)
