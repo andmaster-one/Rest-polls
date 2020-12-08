@@ -1,0 +1,15 @@
+asgiref==3.3.1
+certifi==2020.11.8
+chardet==3.0.4
+colorama==0.4.4
+Django==3.1.4
+djangorestframework==3.12.2
+httpie==2.3.0
+idna==2.10
+Pygments==2.7.2
+PySocks==1.7.1
+pytz==2020.4
+requests==2.25.0
+requests-toolbelt==0.9.1
+sqlparse==0.4.1
+urllib3==1.26.2
