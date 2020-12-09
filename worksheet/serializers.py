@@ -191,11 +191,7 @@ class PollSerializer(serializers.ModelSerializer):
         is_update = self.context.get('is_update', None)
         if is_detailed:
             self.fields['questions'] = QuestionSerializer(is_detailed = True, many=True, context=self.context)
-            if is_update:
-                 self.fields['description'].required = False
-                 self.fields['date_finish'].required = False
-                 self.fields['poll_name'].required = False
-                 self.fields['date_start'].read_only = True
+            
 
 
 
